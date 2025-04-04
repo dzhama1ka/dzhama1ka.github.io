@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('#contacts form');
     const nameSelect = document.querySelector('.custom-select');
     const emailInput = document.querySelector('input[type="email"]');
-    const subjectInput = document.querySelector('input[placeholder="Тема"]');
+    const subjectInput = document.querySelector('input[placeholder="Имя"]');
     const messageTextarea = document.querySelector('textarea');
     const submitBtn = document.querySelector('.submit-btn');
 
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (subjectInput.value.trim() === '') {
-            showError(subjectInput, 'Пожалуйста, введите тему');
+            showError(subjectInput, 'Пожалуйста, введите имя');
             isValid = false;
         } else {
             clearError(subjectInput);

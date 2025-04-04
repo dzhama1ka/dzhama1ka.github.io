@@ -16,13 +16,13 @@
       </div>
       <div class="container">
         <div class="header-content">
-          <div class="intro-text">
+          <div class="intro-text" align="left">
             <h1>Привет!</h1>
             <p>Меня зовут Джамал,<br> приятно познакомиться!</p>
-            <p class="subtitle">
+            <p class="subtitle" align="left">
               Я 3D художник из Санкт-Петербурга с опытом работы более двух лет.
             </p>
-            <p class="subtitle">
+            <p class="subtitle" align="left">
               Занимаюсь созданием локаций и game-ready моделей персонажей. В 
               общем, сработаемся!
             </p>
@@ -50,12 +50,12 @@
                   Основным направлением моей рабочей деятельности является создание game-ready персонажей для компьютерных игр.
                   Помимо этого, я занимаюсь созданием игровых локаций, анимации и еще кучей прочих штук! <br></br>
               
-                  К своему основному софту могу отнести такие программы, как Blender и Adobe Subtance Painter. Также имею опыт работы с Autodesk  3ds Max, Nuke и движком Unreal Engine. 
+                  К своему основному софту могу отнести такие программы, как Blender и Adobe Subtance Painter. Также имею опыт работы с Autodesk  3ds Max, Nuke и движком Unreal Engine. <br></br> 
                   Я — командный игрок, нацеленный на лучший результат! Расслаблен, хладнокровен, невероятен. <br></br>
                 </p>
                 <img src="photo.png" class="jphoto" alt="Фото Джамала" />
               </div>
-              <p><br>
+              <p>
                 А вообще, я много что умею! Имею большой опыт работы с программами Adobe: Photoshop, After Effects, Illustrator, Premiere Pro, Audition и так далее. 
                 Занимался концептуальной (и не очень) фото- и видео-съемками, программированием (Python, HTML, CSS, JS) и дизайном (Figma) веб-сайтов, приложений. 
                 Помимо этого, я занимаюсь музыкой. Разрабатывал игры, верстал книги.
@@ -119,7 +119,12 @@
             <div class="contact-form">
               <h3>Есть вопросы?</h3>
               <form>
-                <!-- Сначала выбор услуги -->
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="Email" required />
+                </div>
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Имя" required />
+                </div>
                 <div class="form-group">
                   <select class="custom-select" name="service" required>
                       <option value="" disabled selected>В какой услуге вы нуждаетесь?</option>
@@ -129,22 +134,9 @@
                       <option value="другое">Другое</option>
                   </select>
                 </div>
-    
-                <!-- Теперь поле для имени -->
-                <div class="form-group">
-                  <input type="text" name="name" placeholder="Имя" required />
-                </div>
-    
-                <!-- Поле для email -->
-                <div class="form-group">
-                  <input type="email" name="email" placeholder="Email" required />
-                </div>
-    
-                <!-- Поле для сообщения -->
                 <div class="form-group">
                   <textarea name="message" placeholder="Ваше сообщение" required></textarea>
                 </div>
-    
                 <button type="submit" class="submit-btn">Отправить</button>
               </form>
             </div>
@@ -163,6 +155,7 @@
         </div>
       </div>
     </section>
+
     
     <footer>
       <div class="container">
@@ -182,5 +175,27 @@
     <button id="scroll-to-top" class="scroll-top-btn">↑</button>
 
     <script src="main.js"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"></script>
+    <script>
+VANTA.FOG({
+    el: "body",
+    mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  highlightColor: 0x64d9f7,
+  midtoneColor: 0x365cca,
+  lowlightColor: 0x123261,
+  baseColor: 0x1841a4,
+  blurFactor: 0.36,
+  speed: 0.80,
+  zoom: 1.80
+})
+</script>
+
   </body>
 </html>

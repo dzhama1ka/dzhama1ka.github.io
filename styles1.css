@@ -5,6 +5,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
+
 body {
     display: flex;
     flex-direction: column;
@@ -20,6 +21,13 @@ main {
     padding-left: 5vw;
     padding-right: 5vw;
 }
+
+.text1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 
 footer {
@@ -45,13 +53,13 @@ footer {
     color: #2c2c2c;
     border: 1px solid black;
     font-size: 1.5rem;
-    padding: 10px 25px;
     height: 8vh;
     width: 12vw;
     border-radius: 5vw;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 5vh;
 }
 
 .pre1:hover {
@@ -114,7 +122,7 @@ footer {
 }
 .image-container img {
     width: 100%;
-    height: auto;
+    height: 60vh;
 }
 .project-block-buttons {
     display: flex;
@@ -222,7 +230,7 @@ p {
 }
 
 .project-block-buttons {
-    margin-top: 4vh;
+    margin-top: 2vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

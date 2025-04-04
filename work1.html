@@ -132,6 +132,16 @@
                 <img src="w12.png" style="width:21vw;">
             </div>
         </div>
+        <div class="text1">
+            <div align="left">
+                Процесс моделирования локации начался с создания основы — типового панельного дома, характерного для северных городов.
+                 Но чтобы разнообразить сцену было решено добавить веранду, что преобразило дом и сделало его более интересным.   
+            </div>
+            <div>
+                Я использовал простую блочную структуру, постепенно детализируя её с помощью экструдирования и булевых операций.
+                Для соблюдения low-poly эстетики важно было найти баланс между узнаваемостью объекта и минимальным количеством полигонов
+            </div>
+        </div>
         <div class="result">
             <h2  align="left">Итог</h2>
             <p  align="left">Работа получилась на славу! Открыл для себя много нового,
@@ -175,6 +185,27 @@
 
 
     </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"></script>
+    <script>
+VANTA.FOG({
+    el: "body",
+    mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  highlightColor: 0x64d9f7,
+  midtoneColor: 0x365cca,
+  lowlightColor: 0x123261,
+  baseColor: 0x1841a4,
+  blurFactor: 0.36,
+  speed: 0.80,
+  zoom: 1.80
+})
+</script>
 
 </body>
+
 </html>
