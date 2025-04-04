@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио Джамала - 3D художник</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="avatar">
+        <img src="челик.png" alt="Аватар Джамала">
+      </div>
+      <div class="container">
+        <div class="header-content">
+          <div class="intro-text">
+            <h1>Привет!</h1>
+            <p>Меня зовут Джамал,<br> приятно познакомиться!</p>
+            <p class="subtitle">
+              Я 3D художник из Санкт-Петербурга с опытом работы более двух лет.
+            </p>
+            <p class="subtitle">
+              Занимаюсь созданием локаций и game-ready моделей персонажей. В
+              общем, сработаемся!
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#about" class="nav-btn">Обо мне</a>
+      <a href="#projects" class="nav-btn">Проекты</a>
+      <a href="#contacts" class="nav-btn">Контакты</a>
+    </nav>
+    
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Обо мне</h2>
+        <div class="about-card">
+          <div class="about-content">
+            <div class="about-text">
+              <h3 class="head1">Кто я вообще такой?</h3>
+              <div class="block1">
+                <p>
+                  Я 3D-художник из Питера, мне 23 года :)<br><br>
+                  Основное направление моей работы — создание game-ready персонажей для игр. 
+                  Также занимаюсь моделированием локаций, анимацией и многим другим.<br><br>
+                  Владею такими программами, как Blender, Adobe Substance Painter, а также имею опыт работы с 3ds Max, Nuke и Unreal Engine.<br><br>
+                  Я — командный игрок, нацеленный на лучший результат! Расслаблен, хладнокровен, невероятен.
+                </p>
+                <img src="photo.png" class="jphoto" alt="Фото Джамала" />
+              </div>
+              <p><br>
+                Кроме этого, я имею опыт работы с Adobe Photoshop, After Effects, Illustrator, Premiere Pro, Audition и другими инструментами. 
+                Также занимался концептуальной фото- и видеосъёмкой, программированием (Python, HTML, CSS, JS) и дизайном (Figma).<br><br>
+                Помимо этого, я увлекаюсь музыкой, разработкой игр и книг.<br><br>
+                Моя мечта — выиграть по разу Оскар и Грэмми и озвучить Геральта в следующей игре по "Ведьмаку".
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Мои проекты</h2>
+        <div class="projects-grid">
+          <div class="project-card large">
+            <a href="work1.html"><img src="p1.png" alt="Сёджи - game-ready модель для Sifu" class="project-image" /></a>
+            <div class="project-info">
+              <h3>Сёджи</h3>
+              <p>game-ready модель для игры Sifu</p>
+            </div>
+          </div>
+          <div class="project-card large">
+            <img src="p2.png" alt="Выпал снег - ностальгия по детству" class="project-image" />
+            <div class="project-info">
+              <h3>Выпал снег</h3>
+              <p>ностальгия по детству</p>
+            </div>
+          </div>
+          <div class="project-card small">
+            <img src="p3.png" alt="Ezekiel 25:17 - в формате Lego анимации" class="project-image"/>
+            <div class="project-info">
+              <h3>Ezekiel 25:17</h3>
+              <p>в формате Lego анимации</p>
+            </div>
+          </div>
+          <div class="project-card small">
+            <img src="p4.png" alt="У берега моря - низкополигональный отдых" class="project-image"/>
+            <div class="project-info">
+              <h3>У берега моря</h3>
+              <p>низкополигональный отдых</p>
+            </div>
+          </div>
+          <div class="project-card small">
+            <img src="p5.png" alt="JAM - A1 - робот будущего" class="project-image"/>
+            <div class="project-info">
+              <h3>JAM - A1</h3>
+              <p>робот буду</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="container">
+        <h2>Контакты</h2>
+        <div class="contact-card">
+          <div class="contact-columns">
+            <div class="contact-form">
+              <h3>Есть вопросы?</h3>
+              <form>
+                <!-- Сначала выбор услуги -->
+                <div class="form-group">
+                  <select class="custom-select" name="service" required>
+                      <option value="" disabled selected>В какой услуге вы нуждаетесь?</option>
+                      <option value="Game-ready персонаж">Game-ready персонаж</option>
+                      <option value="Создание локации">Создание локации</option>
+                      <option value="Текстурирование">Текстурирование</option>
+                      <option value="другое">Другое</option>
+                  </select>
+                </div>
+    
+                <!-- Теперь поле для имени -->
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Имя" required />
+                </div>
+    
+                <!-- Поле для email -->
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="Email" required />
+                </div>
+    
+                <!-- Поле для сообщения -->
+                <div class="form-group">
+                  <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                </div>
+    
+                <button type="submit" class="submit-btn">Отправить</button>
+              </form>
+            </div>
+            <div class="social-links">
+              <h3>Свяжитесь со мной</h3>
+              <div class="social-buttons">
+                <a href="https://vk.com/dzhomelka">
+                  <img src="vk.png" class="logo" alt="VK">
+                </a>
+                <a href="https://t.me/slam_dzham">
+                  <img src="tg.png" class="logo" alt="Telegram">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="container">
+        <p>&copy; Задизайнено и сверстано Джамалом Балаевым в 2025 году</p>
+      </div>
+    </footer>
+
+    <div id="successDialog" class="dialog">
+        <div class="dialog-content">
+            <span class="close-dialog">&times;</span>
+            <h3>Спасибо!</h3>
+            <p>Ваша заявка успешно отправлена. Я свяжусь с вами в ближайшее время.</p>
+            <button class="ok-btn">OK</button>
+        </div>
+    </div>
+
+    <button id="scroll-to-top" class="scroll-top-btn">↑</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
