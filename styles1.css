@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    line-height: 1.3;
 }
 
 
@@ -25,6 +26,8 @@ main {
 .text1 {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+    font-size: 1.2rem;
 }
 
 
@@ -70,9 +73,9 @@ footer {
 .nav {
     width: 25vw;
     height: 12vh;
-    padding-left: 4vw;
+    padding-left: 3vw;
     padding-right: 4vw;
-    border-radius: 5vw;
+    border-radius: 2vw;
     display: flex;
     cursor: pointer;
 
@@ -93,13 +96,14 @@ footer {
 
 
 .prev .text {
+
     text-align: right;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 .next .text {
     text-align: left;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .text p {
@@ -109,7 +113,7 @@ footer {
 
 .text h2 {
     margin: 5px 0 0;
-    font-size: 20px;
+    font-size: 36px;
 }
 
 .arrow {
@@ -122,7 +126,7 @@ footer {
 }
 .image-container img {
     width: 100%;
-    height: 60vh;
+    height: 55vh;
 }
 .project-block-buttons {
     display: flex;
@@ -141,7 +145,7 @@ footer {
 }
 
 .nav1 {
-    width: 16vw;
+    width: 15vw;
     height: 5vh;
     margin-top: 2vw;
     margin-bottom: 1vw;
@@ -174,9 +178,11 @@ footer {
 }
 
 .main-container {
+    padding-bottom: 2vh;
     width: 60vw;
     background:#ffffff;
     padding: 5vw;
+    padding-top: 5vh;
     margin-top: 2vw;
     margin-bottom: 2vw;
     border-radius: 5vw;
@@ -192,6 +198,12 @@ h1 {
 h2 {
     font-size: 48px;
     margin-bottom: 2vh;
+    padding-left: 50px;
+}
+
+h4 {
+    font-size: 36px;
+    margin-bottom: 2vh;
 }
 
 p {
@@ -201,7 +213,7 @@ p {
 .main-block {
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    height: 70vh;
     justify-content: center;
     margin-bottom: 10vh;
 }
@@ -209,13 +221,14 @@ p {
 .info-block {
     color: #fff;
     display: flex;
-    padding :2vw;
+    padding :1vw;
+    padding-top: 5vh;
     flex-direction: column;
     align-items:space-between;
     justify-content: start;
     gap: 1.5vw;
     width: 50%;
-    height: 80vh;
+    height: 70vh;
     background-color: #073E6B;
     border-radius: 2vw;
 
@@ -230,7 +243,7 @@ p {
 }
 
 .project-block-buttons {
-    margin-top: 2vh;
+    margin-top: 4vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -258,7 +271,7 @@ a {
 }
 
 .image-container img {
-    min-height: 68vh;
+    min-height: 55vh;
     border-radius: 2vw;
 }
 
@@ -268,7 +281,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 10vh;
+    margin-bottom: 1vh;
 }
 
 .description-with-image p {
@@ -277,22 +290,22 @@ a {
 }
 
 .description-with-image img {
-    max-height: 50vh;
+    max-height: 45vh;
 
 
 }
 
 .big-image {
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 .image-group {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     display: flex;
     word-break:all;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
 }
 
@@ -322,8 +335,6 @@ ol {
 .dwi img {
     float: right;
     padding-left: 2vw;
-
-
 }
 
 
@@ -334,6 +345,7 @@ ol {
     grid-template-areas:
         "tall wide"
         "tall text";
+        margin-top: 10px;
     gap: 20px;
     max-width: 100%;
     border-radius: 15px;
@@ -375,17 +387,18 @@ ol {
 
 .text-section p {
     color: #333;
-    line-height: 1.6;
+    line-height: 1.3;
 }
+
 
 
 .scroll-top-btn {
     position: fixed;
-    bottom: 10vh;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    bottom: 20vh;
+    right: 250px;
+    width: 70px;
+    height: 100px;
+    border-radius: 40%;
     background-color: #ffffff;
     color: #356cb1;
     border: none;
@@ -395,7 +408,8 @@ ol {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    padding-bottom: 1vh;
+    font-size: 6rem;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
@@ -407,7 +421,8 @@ ol {
 }
 
 .scroll-top-btn:hover {
-    background-color: #4a90e2;
+    background-color: #073E6B;
+    color:#ffffff;
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
@@ -451,10 +466,11 @@ ol {
     display: flex;
     margin-bottom: 25px;
     align-items: flex-start;
+    gap: 20px;
 }
 
 .label {
-    width: 150px;
+    width: 4vw;
     font-weight: normal;
     font-size: 1.2rem;
 }
@@ -462,15 +478,12 @@ ol {
 .value {
     flex-grow: 1;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 1.3;
+flex-wrap: nowrap;
+
     font-size: 1.2rem;
 
 }
 
-.footer {
-    margin-top: 40px;
-}
 
 .title, .description {
     font-weight: bold;

@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    line-height: 1.3;
 }
 
 body {
@@ -13,7 +14,6 @@ body {
 }
 
 .container {
-    width: 90%;
     max-width: 60vw;
     margin: 0 auto;
     padding: 20px 0;
@@ -43,6 +43,8 @@ h3 {
 
 .head1 {
     font-size: 3rem;
+    margin-left: 20px;
+
 }
 
 p {
@@ -57,14 +59,14 @@ header{
 }
 
 .section {
-    padding: 40px 0;
+    padding: 70px 0;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-bottom: 8vh;
+    margin-bottom: 5vh;
 }
 
 
@@ -82,12 +84,13 @@ header{
 }
 
 .intro-text  {
-    text-align: end;
+    text-align:right;
+    margin-right: 10vh;
 }
 
 .intro-text h1 {
     margin-top: 5vh;
-    margin-left: 0;
+    margin-right: 25vh;
 
 }
 
@@ -96,9 +99,22 @@ header{
     font-size: 2rem;
 }
 
-.intro-text p.subtitle {
+.intro-text p.subtitle1 {
+
+    margin-left: 25vw;
+    font-weight: 200;
+    font-size: 2rem;
+    
+
+
+
+}
+
+
+
+.intro-text p.subtitle2 {
     margin-right: 5vw;
-    margin-left: 10vw;
+    margin-left: 15vw;
 
     margin-top: 2vw;
     font-weight: 200;
@@ -109,9 +125,9 @@ header{
 
 }
 
-.intro-text p.subtitle1 {
-    margin-right: 8vw;
-    margin-top: 2vw;
+.intro-text p.subtitle3 {
+ 
+
     font-size: 2rem;
     font-weight: 200;
     margin-bottom: 10vh;
@@ -264,13 +280,14 @@ img {
 .jphoto  {
     max-height: 40vh;
     border-radius: 50vw;
-    margin-top: -7vh;
+    margin-top: -10vh;
 }
 
 .block1 {
     display: flex;
     flex-direction: row;
     align-content:center;
+    gap:20px;
     justify-content: center;
 }
 
@@ -301,12 +318,12 @@ img {
 
 .back-to-top {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 40px;
+    right: 40px;
     background-color: #356cb1;
     color: #fff;
     width: 40px;
-    height: 40px;
+    height: 80px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -347,15 +364,17 @@ button:hover {
 
 .project-card.large {
     grid-column: span 3;
+
 }
 
 .project-card.small {
     grid-column: span 2;
+
 }
 
 .project-card img {
     width: 100%;
-    height: 30vh;
+    height: 25vh;
     object-fit: cover;
     filter: grayscale(100%); /* Делаем изображение черно-белым */
     transition: filter 0.4s ease; /* Плавная анимация при изменении */
@@ -370,11 +389,13 @@ button:hover {
 }
 
 .project-info {
-    padding: 1vw;
+    padding: 0.8vw;
+    padding-left: 2vw;
 }
 
 .project-info:hover {
-    padding: 1vw;
+    padding: 0.8vw;
+    padding-left: 2vw;
 }
 
 
@@ -484,8 +505,8 @@ h4 {
 }
 
 .submit-btn {
-    background-color: #ffffff;
-    color: #2c2c2c;
+    background-color: #073E6B;
+    color: #ffffff;
     border: 1px solid black;
     font-size: 1.5rem;
     padding: 10px 25px;
@@ -498,8 +519,8 @@ h4 {
 }
 
 .submit-btn:hover {
-    background-color: #0767B2;
-    color: white;
+    background-color: #ffffff;
+    color: #073E6B;
 }
 
 
@@ -516,8 +537,9 @@ h4 {
 
 .social-buttons {
     display: flex;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 80px;
+    margin-top: 10px;
+    padding-left: 9%;
 }
 
 
@@ -851,11 +873,11 @@ textarea:focus {
 
 .scroll-top-btn {
     position: fixed;
-    bottom: 17vh;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    bottom: 20vh;
+    right: 250px;
+    width: 70px;
+    height: 100px;
+    border-radius: 40%;
     background-color: #ffffff;
     color: #356cb1;
     border: none;
@@ -865,7 +887,8 @@ textarea:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    padding-bottom: 1vh;
+    font-size: 6rem;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
@@ -877,7 +900,8 @@ textarea:focus {
 }
 
 .scroll-top-btn:hover {
-    background-color: #4a90e2;
+    background-color: #073E6B;
+    color:#ffffff;
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }

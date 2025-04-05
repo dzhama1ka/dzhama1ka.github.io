@@ -18,11 +18,13 @@
         <div class="header-content">
           <div class="intro-text" align="left">
             <h1>Привет!</h1>
-            <p>Меня зовут Джамал,<br> приятно познакомиться!</p>
-            <p class="subtitle" align="left">
+            <p class="subtitle1" align="left">Меня зовут Джамал,</p>
+            <p class="subtitle1" align="left"> приятно познакомиться!</p>
+
+            <p class="subtitle2" align="left">
               Я 3D художник из Санкт-Петербурга с опытом работы более двух лет.
             </p>
-            <p class="subtitle" align="left">
+            <p class="subtitle3" align="left"> 
               Занимаюсь созданием локаций и game-ready моделей персонажей. В 
               общем, сработаемся!
             </p>
@@ -37,8 +39,8 @@
       <a href="#contacts" class="nav-btn">Контакты</a>
     </nav>
     
-    <section id="about" class="section">
-      <div class="container">
+    <section class="section">
+      <div id="about" class="container">
         <h2>Обо мне</h2>
         <div class="about-card">
           <div class="about-content">
@@ -68,8 +70,8 @@
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <div class="container">
+    <section class="section">
+      <div id="projects"class="container">
         <h2>Мои проекты</h2>
         <div class="projects-grid">
           <div class="project-card large">
@@ -80,28 +82,28 @@
             </div>
           </div>
           <div class="project-card large">
-            <img src="p2.png" alt="Выпал снег - ностальгия по детству" class="project-image" />
+            <a href="work2.html"><img src="p2.png" alt="Выпал снег - ностальгия по детству" class="project-image" /></a>
             <div class="project-info">
               <h3>Выпал снег</h3>
               <p>ностальгия по детству</p>
             </div>
           </div>
           <div class="project-card small">
-            <img src="p3.png" alt="Ezekiel 25:17 - в формате Lego анимации" class="project-image"/>
+            <a href="work3.html"><img src="p3.png" alt="Ezekiel 25:17 - в формате Lego анимации" class="project-image"/></a>
             <div class="project-info">
               <h3>Ezekiel 25:17</h3>
               <p>в формате Lego анимации</p>
             </div>
           </div>
           <div class="project-card small">
-            <img src="p4.png" alt="У берега моря - низкополигональный отдых" class="project-image"/>
+            <a href="work4.html"><img src="p4.png" alt="У берега моря - низкополигональный отдых" class="project-image"/></a>
             <div class="project-info">
               <h3>У берега моря</h3>
               <p>низкополигональный отдых</p>
             </div>
           </div>
           <div class="project-card small">
-            <img src="p5.png" alt="JAM - A1 - робот будущего" class="project-image"/>
+            <a href="work5.html"><img src="p5.png" alt="JAM - A1 - робот будущего" class="project-image"/></a>
             <div class="project-info">
               <h3>JAM - A1</h3>
               <p>робот буду</p>
@@ -177,23 +179,20 @@
     <script src="main.js"></script>
 
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
     <script>
-VANTA.FOG({
-    el: "body",
-    mouseControls: true,
+VANTA.TOPOLOGY({
+  el: "body",
+  mouseControls: true,
   touchControls: true,
   gyroControls: false,
   minHeight: 200.00,
   minWidth: 200.00,
-  highlightColor: 0x64d9f7,
-  midtoneColor: 0x365cca,
-  lowlightColor: 0x123261,
-  baseColor: 0x1841a4,
-  blurFactor: 0.36,
-  speed: 0.80,
-  zoom: 1.80
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xffffff,
+  backgroundColor: 0x073E6B
 })
 </script>
 
